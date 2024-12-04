@@ -1,0 +1,34 @@
+import { createApp } from 'vue'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faDesktop,
+  faFileLines,
+  faPenNib,
+  faCodeBranch,
+  faStar
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+// Add the necessary CSS
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import '@/assets/main.css'
+
+// Add icons to the library
+library.add(faHome, faUser, faEnvelope, faDesktop, faFileLines, faPenNib, faCodeBranch, faStar)
+
+import App from './App.vue'
+import router from './router'
+import { createPinia } from 'pinia'
+
+const app = createApp(App)
+app.use(createPinia())
+app.use(router)
+
+// Register the component globally
+app.component('font-awesome-icon', FontAwesomeIcon)
+
+app.mount('#app')
