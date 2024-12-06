@@ -11,7 +11,7 @@
     style="background: rebeccapurple"
   >
     <!-- Container Wrapper -->
-    <TheContainer :fluid="fluid">
+    <TheContainer>
       <!-- Brand Slot -->
       <template v-if="$slots.brand">
         <slot name="brand"></slot>
@@ -46,7 +46,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import TheContainer from './Container.vue'
-import TheButton from './Button.vue' // Import your custom button component
+import TheButton from './Button.vue'
 
 export default defineComponent({
   name: 'TheNavbar',

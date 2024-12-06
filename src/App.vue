@@ -2,35 +2,26 @@
   <PreLoader :load="load" />
   <div :class="['app', load ? 'no-scroll' : 'scroll']">
     <AppNavbar />
-    <!-- <ScrollToTop />
+    <ScrollToTop />
     <router-view />
-    <Footer /> -->
+    <TheFooter />
   </div>
 </template>
 
-<script>
-import { ref, onMounted } from 'vue'
-// import { useRouter } from 'vue-router'
+<script lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
 import PreLoader from './components/PreLoader.vue'
 import AppNavbar from './components/AppNavbar.vue'
-// import Home from './components/Home/Home.vue'
-// import About from './components/About/About.vue'
-// import Projects from './components/Projects/Projects.vue'
-// import Footer from './components/Footer.vue'
-// import Resume from './components/Resume/ResumeNew.vue'
-// import ScrollToTop from './components/ScrollToTop.vue'
+import ScrollToTop from './components/ScrollToTop.vue'
+import TheFooter from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     PreLoader,
-    AppNavbar
-    // Home,
-    // About,
-    // Projects,
-    // Footer,
-    // Resume,
-    // ScrollToTop
+    AppNavbar,
+    ScrollToTop,
+    TheFooter
   },
   setup() {
     const load = ref(true)
@@ -40,7 +31,9 @@ export default {
         load.value = false
       }, 1200)
 
-      return () => clearTimeout(timer)
+      onUnmounted(() => {
+        clearTimeout(timer)
+      })
     })
 
     return { load }
@@ -49,11 +42,6 @@ export default {
 </script>
 
 <style scoped>
-/* Import your CSS files */
-/* @import './style.css';
-@import './App.css';
-@import 'bootstrap/dist/css/bootstrap.min.css'; */
-
 .app {
   text-align: center;
 }
@@ -61,5 +49,9 @@ export default {
 .no-scroll {
   overflow: hidden;
   height: 100vh;
+}
+
+.scroll {
+  overflow: auto;
 }
 </style>
