@@ -66,8 +66,8 @@ export default defineComponent({
     }
   },
   methods: {
-    onParticlesLoaded(container?: any) {
-      console.log('Particles Loaded:', container)
+    onParticlesLoaded() {
+      // console.log('Particles Loaded:', container)
     }
   }
 })

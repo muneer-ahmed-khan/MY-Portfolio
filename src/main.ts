@@ -14,7 +14,8 @@ import {
   faGithub,
   faLinkedin,
   faStackOverflow,
-  faFacebook
+  faFacebook,
+  faMediumM
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Particles from '@tsparticles/vue3'
@@ -36,7 +37,8 @@ library.add(
   faGithub,
   faLinkedin,
   faStackOverflow,
-  faFacebook
+  faFacebook,
+  faMediumM
 )
 
 import App from './App.vue'

@@ -5,18 +5,19 @@
         <TheCol md="8" class="home-about-description">
           <h1 style="font-size: 2.6em">LET ME <span class="azure"> INTRODUCE </span> MYSELF</h1>
           <p class="home-about-body">
-            I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
+            I've fallen in love with programming and picked up a thing or two along the way… I
+            think… 🤔💻
             <br />
             <br />I am fluent in classics like
             <i>
-              <b class="azure"> C++, Javascript and Go. </b>
+              <b class="azure"> Javascript and Python. </b>
             </i>
             <br />
             <br />
             My field of Interest's are building new &nbsp;
             <i>
-              <b class="azure">Web Technologies and Products </b> and also in areas related to{" "}
-              <b class="azure"> Blockchain. </b>
+              <b class="azure">Web Technologies and Products </b> and also in areas related
+              <b class="azure"> AI, ML and LLMs. </b>
             </i>
             <br />
             <br />
@@ -27,13 +28,13 @@
             </i>
             &nbsp; like
             <i>
-              <b class="azure"> React.js and Next.js </b>
+              <b class="azure"> Vue.js and React.js </b>
             </i>
           </p>
         </TheCol>
         <TheCol md="4" custom-class="myAvtar">
           <Tilt>
-            <img src="@/assets/avatar.svg" class="img-fluid" alt="avatar" />
+            <img src="@/assets/avatar.png" class="img-fluid" alt="avatar" />
           </Tilt>
         </TheCol>
       </Row>
@@ -70,6 +71,16 @@
                 class="icon-colour home-social-icons"
               >
                 <font-awesome-icon :icon="['fab', 'stack-overflow']" />
+              </a>
+            </li>
+            <li class="social-icons">
+              <a
+                href="https://medium.com/@muneerkhan31886"
+                target="_blank"
+                rel="noreferrer"
+                class="icon-colour home-social-icons"
+              >
+                <font-awesome-icon :icon="['fab', 'medium-m']" />
               </a>
             </li>
             <li class="social-icons">

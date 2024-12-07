@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, reactive, onMounted, onUnmounted } from 'vue'
+import { defineComponent, ref, reactive } from 'vue'
 
 export default defineComponent({
   name: 'ParallaxTilt',
@@ -56,6 +56,7 @@ export default defineComponent({
       background: props.glareColor
     })
 
+    // Define Mouse Event Handlers
     const onMouseMove = (event: MouseEvent) => {
       if (!tiltWrapper.value || !props.tiltEnable) return
 
@@ -97,27 +98,15 @@ export default defineComponent({
       contentStyles.transition = `transform ${props.transitionSpeed}ms cubic-bezier(0.03, 0.98, 0.52, 0.99)`
     }
 
-    onMounted(() => {
-      if (tiltWrapper.value) {
-        tiltWrapper.value.addEventListener('mousemove', onMouseMove)
-        tiltWrapper.value.addEventListener('mouseleave', onMouseLeave)
-        tiltWrapper.value.addEventListener('mouseenter', onMouseEnter)
-      }
-    })
-
-    onUnmounted(() => {
-      if (tiltWrapper.value) {
-        tiltWrapper.value.removeEventListener('mousemove', onMouseMove)
-        tiltWrapper.value.removeEventListener('mouseleave', onMouseLeave)
-        tiltWrapper.value.removeEventListener('mouseenter', onMouseEnter)
-      }
-    })
-
+    // Return functions to template
     return {
       tiltWrapper,
       wrapperStyles,
       contentStyles,
-      glareStyles
+      glareStyles,
+      onMouseMove,
+      onMouseLeave,
+      onMouseEnter
     }
   }
 })

@@ -2,7 +2,7 @@
   <Container custom-class="footer" :fluid="true">
     <Row>
       <Column md="4" custom-class="footer-copywright">
-        <h3>Designed and Developed by Muneer Ahmed Khan</h3>
+        <h3>Designed and Developed by Muneer Ahmed</h3>
       </Column>
       <Column md="4" custom-class="footer-copywright">
         <h3>Copyright © {{ year }} MA</h3>
@@ -37,6 +37,16 @@
               style="color: white"
             >
               <font-awesome-icon :icon="['fab', 'stack-overflow']" />
+            </a>
+          </li>
+          <li class="social-icons">
+            <a
+              href="https://medium.com/@muneerkhan31886"
+              target="_blank"
+              rel="noreferrer"
+              style="color: white"
+            >
+              <font-awesome-icon :icon="['fab', 'medium-m']" />
             </a>
           </li>
           <li class="social-icons">

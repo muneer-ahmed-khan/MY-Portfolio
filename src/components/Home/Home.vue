@@ -38,7 +38,7 @@ import TheContainer from '@/components/bootstrap/Container.vue'
 import TheRow from '@/components/bootstrap/Row.vue'
 import TheCol from '@/components/bootstrap/Col.vue'
 import Home2 from './Home2.vue'
-import homeLogo from '@/assets/main-home.svg'
+import homeLogo from '@/assets/home-main.png'
 
 export default defineComponent({
   name: 'TheHome',

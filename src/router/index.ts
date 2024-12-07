@@ -8,12 +8,11 @@ import Home from '../components/Home/Home.vue'
 
 // Define routes
 const routes = [
-  // { path: '/', redirect: '/home' }, // Default route
-  { path: '/home', component: Home }
+  { path: '/', component: Home },
   // { path: '/about', component: About },
   // { path: '/projects', component: Projects },
   // { path: '/resume', component: Resume },
-  // { path: '/:pathMatch(.*)*', redirect: '/home' } // Redirect invalid routes to '/home'
+  { path: '/:pathMatch(.*)*', redirect: '/' }
 ]
 
 // Create the router instance

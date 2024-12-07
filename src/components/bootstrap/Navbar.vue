@@ -8,7 +8,6 @@
       fixed ? `fixed-${fixed}` : '',
       sticky ? 'sticky-top' : ''
     ]"
-    style="background: #007bff"
   >
     <!-- Container Wrapper -->
     <TheContainer>

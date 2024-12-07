@@ -1,3 +1,4 @@
+<template><span></span></template>
 <script lang="ts">
 import { onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
