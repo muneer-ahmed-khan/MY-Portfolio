@@ -10,6 +10,12 @@ import {
   faCodeBranch,
   faStar
 } from '@fortawesome/free-solid-svg-icons'
+import {
+  faGithub,
+  faLinkedin,
+  faStackOverflow,
+  faFacebook
+} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Particles from '@tsparticles/vue3'
 import { loadFull } from 'tsparticles'
@@ -18,7 +24,20 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import '@/assets/main.css'
 
-library.add(faHome, faUser, faEnvelope, faDesktop, faFileLines, faPenNib, faCodeBranch, faStar)
+library.add(
+  faHome,
+  faUser,
+  faEnvelope,
+  faDesktop,
+  faFileLines,
+  faPenNib,
+  faCodeBranch,
+  faStar,
+  faGithub,
+  faLinkedin,
+  faStackOverflow,
+  faFacebook
+)
 
 import App from './App.vue'
 import router from './router/index'

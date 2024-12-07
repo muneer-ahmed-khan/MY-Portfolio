@@ -69,7 +69,7 @@ export default defineComponent({
 }
 
 .main-name {
-  color: #007bff; /* Adjust to your theme color */
+  color: #007bff;
 }
 
 .wave {

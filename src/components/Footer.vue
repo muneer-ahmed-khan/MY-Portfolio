@@ -1,52 +1,52 @@
 <template>
-  <Container class="footer">
+  <Container custom-class="footer" :fluid="true">
     <Row>
-      <Column md="4" class="footer-copywright">
+      <Column md="4" custom-class="footer-copywright">
         <h3>Designed and Developed by Muneer Ahmed Khan</h3>
       </Column>
-      <Column md="4" class="footer-copywright">
+      <Column md="4" custom-class="footer-copywright">
         <h3>Copyright © {{ year }} MA</h3>
       </Column>
-      <Column md="4" class="footer-body">
+      <Column md="4" custom-class="footer-body">
         <ul class="footer-icons">
           <li class="social-icons">
             <a
               href="https://github.com/muneer-ahmed-khan"
-              style="color: white"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
+              style="color: white"
             >
-              <i class="fab fa-github"></i>
+              <font-awesome-icon :icon="['fab', 'github']" />
             </a>
           </li>
           <li class="social-icons">
             <a
-              href="https://twitter.com/muneer_ahmed"
-              style="color: white"
+              href="https://www.linkedin.com/in/muneer-ahmed-a59362140/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
+              style="color: white"
             >
-              <i class="fab fa-twitter"></i>
+              <font-awesome-icon :icon="['fab', 'linkedin']" />
             </a>
           </li>
           <li class="social-icons">
             <a
-              href="https://www.linkedin.com/in/muneer-ahmed-khan/"
-              style="color: white"
+              href="https://stackoverflow.com/users/8422060/muneer-khan"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
+              style="color: white"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <font-awesome-icon :icon="['fab', 'stack-overflow']" />
             </a>
           </li>
           <li class="social-icons">
             <a
-              href="https://www.instagram.com/muneerahmed/"
-              style="color: white"
+              href="https://www.facebook.com/muneerkhan555/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
+              style="color: white"
             >
-              <i class="fab fa-instagram"></i>
+              <font-awesome-icon :icon="['fab', 'facebook']" />
             </a>
           </li>
         </ul>
@@ -75,33 +75,4 @@ export default defineComponent({
 })
 </script>
 
-<style>
-.footer {
-  background-color: #212529;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.footer-copywright {
-  margin-bottom: 10px;
-}
-
-.footer-icons {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 0;
-}
-
-.social-icons a {
-  font-size: 1.5rem;
-  color: white;
-  transition: color 0.3s;
-}
-
-.social-icons a:hover {
-  color: #0d6efd;
-}
-</style>
+<style></style>
