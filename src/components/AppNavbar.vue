@@ -122,14 +122,6 @@ export default defineComponent({
 </script>
 
 <style>
-.navbar {
-  transition: background-color 0.3s ease-in-out;
-}
-
-.sticky {
-  background-color: #343a40;
-}
-
 .logo {
   max-height: 40px;
 }

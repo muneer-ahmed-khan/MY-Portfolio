@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar"
+    class="sticky navbar"
     :class="[
       `navbar-expand-${expand}`,
       bg ? `bg-${bg}` : '',
