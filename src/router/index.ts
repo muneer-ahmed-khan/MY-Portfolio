@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 // Import your component routes
-import Home from '../components/home-temp/Home.vue'
-import About from '../components/about-temp/About.vue'
+import Home from '../components/home/Home.vue'
+import About from '../components/about/About.vue'
 // import Projects from '../components/Projects/Projects.vue'
 // import Resume from '../components/Resume/ResumeNew.vue'
 
