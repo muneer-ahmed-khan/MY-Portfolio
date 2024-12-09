@@ -5,7 +5,9 @@
         <h3>Designed and Developed by Muneer Ahmed</h3>
       </Column>
       <Column md="4" custom-class="footer-copywright">
-        <h3>Copyright © {{ year }} MA</h3>
+        <h3>
+          Copyright © {{ year }} <strong>{{ "<Ma. />" }}</strong>
+        </h3>
       </Column>
       <Column md="4" custom-class="footer-body">
         <ul class="footer-icons">

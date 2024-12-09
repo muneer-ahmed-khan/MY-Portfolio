@@ -694,8 +694,8 @@ button:focus {
 }
 
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background-color: #4c55ce5e !important;
+  border-color: #4c5bce5e !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -704,8 +704,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #4d63d386 !important;
+  border-color: #4d51d386 !important;
 }
 
 .animate-like {

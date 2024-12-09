@@ -8,14 +8,24 @@ import {
   faFileLines,
   faPenNib,
   faCodeBranch,
-  faStar
+  faStar,
+  faHandPointRight
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
   faLinkedin,
   faStackOverflow,
   faFacebook,
-  faMediumM
+  faMediumM,
+  faJs,
+  faNode,
+  faVuejs,
+  faReact,
+  faPython,
+  faGitAlt,
+  faAws,
+  faApple,
+  faSlack
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Particles from '@tsparticles/vue3'
@@ -38,7 +48,17 @@ library.add(
   faLinkedin,
   faStackOverflow,
   faFacebook,
-  faMediumM
+  faMediumM,
+  faHandPointRight,
+  faJs,
+  faNode,
+  faVuejs,
+  faReact,
+  faPython,
+  faGitAlt,
+  faAws,
+  faApple,
+  faSlack
 )
 
 import App from './App.vue'
