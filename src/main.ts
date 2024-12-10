@@ -9,7 +9,8 @@ import {
   faPenNib,
   faCodeBranch,
   faStar,
-  faHandPointRight
+  faHandPointRight,
+  faArrowDown
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
@@ -30,6 +31,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Particles from '@tsparticles/vue3'
 import { loadFull } from 'tsparticles'
+import VuePdf from 'vue3-pdfjs'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
@@ -56,9 +58,11 @@ library.add(
   faReact,
   faPython,
   faGitAlt,
+  faGithub,
   faAws,
   faApple,
-  faSlack
+  faSlack,
+  faArrowDown
 )
 
 import App from './App.vue'
@@ -75,6 +79,8 @@ app.use(Particles, {
     await loadFull(engine)
   }
 })
+
+app.use(VuePdf)
 
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(router)

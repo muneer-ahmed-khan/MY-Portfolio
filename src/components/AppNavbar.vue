@@ -28,7 +28,7 @@
         </router-link>
       </div>
       <div class="nav-item">
-        <router-link class="nav-link" to="/project" @click="closeNavbar">
+        <router-link class="nav-link" to="/projects" @click="closeNavbar">
           <font-awesome-icon
             icon="desktop"
             style="margin-bottom: 2px; margin-right: 4px; font-size: 1.2rem"
