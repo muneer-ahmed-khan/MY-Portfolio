@@ -63,7 +63,6 @@ export default defineComponent({
 
     // Toggle the collapse state
     const toggleCollapse = () => {
-      console.log('Button clicked! Toggling collapse. Current state:', isCollapsed.value)
       isCollapsed.value = !isCollapsed.value
     }
 
@@ -75,18 +74,4 @@ export default defineComponent({
 })
 </script>
 
-<style>
-/* Optional: Custom styling */
-.navbar-toggler {
-  border: none;
-  background: transparent;
-  padding: 0.25rem 0.75rem;
-}
-.navbar-toggler span {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: #000;
-  margin: 4px 0;
-}
-</style>
+<style></style>

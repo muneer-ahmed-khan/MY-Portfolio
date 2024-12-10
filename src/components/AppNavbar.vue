@@ -100,8 +100,13 @@ export default defineComponent({
 
     const closeNavbar = () => {
       const navbarCollapse = document.querySelector('.navbar-collapse')
+      const navbarToggle = document.querySelector('.navbar-toggler')
+
       if (navbarCollapse) {
         navbarCollapse.classList.remove('show')
+      }
+      if (navbarToggle) {
+        navbarToggle.classList.add('collapsed')
       }
     }
 

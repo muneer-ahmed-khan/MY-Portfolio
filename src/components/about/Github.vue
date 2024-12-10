@@ -1,6 +1,6 @@
 <template>
   <Row style="justify-content: center; padding-bottom: 10px">
-    <h1 class="project-heading">Days I <strong class="purple">Code</strong></h1>
+    <h1 class="project-heading">Days I <strong class="blue">Code</strong></h1>
     <template v-if="calendarData && calendarData.length > 0">
       <CalendarHeatmap
         :values="calendarData"
@@ -61,5 +61,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style scoped></style>

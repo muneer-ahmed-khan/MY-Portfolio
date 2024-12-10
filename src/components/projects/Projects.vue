@@ -2,7 +2,7 @@
   <Container :fluid="true" custom-class="project-section">
     <Particle />
     <Container>
-      <h1 class="project-heading">My Recent <strong class="purple">Works </strong></h1>
+      <h1 class="project-heading">My Recent <strong class="blue">Works </strong></h1>
       <p style="color: white">Here are a few projects I've worked on recently.</p>
       <Row style="justify-content: center; padding-bottom: 10px">
         <!-- Chatify Project -->
@@ -107,18 +107,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
-/* .project-section {
-  padding: 70px 0;
-}
-.purple {
-  color: #6a1b9a;
-}
-.project-heading {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.project-card {
-  margin-bottom: 20px;
-} */
-</style>
+<style scoped></style>

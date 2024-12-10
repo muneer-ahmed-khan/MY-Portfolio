@@ -3,8 +3,8 @@
     <div class="card-body">
       <blockquote class="blockquote mb-0">
         <p style="text-align: justify">
-          Hi Everyone, I am <span class="purple">Muneer Ahmed</span> from
-          <span class="purple">Karachi, Pakistan.</span>
+          Hi Everyone, I am <span class="blue">Muneer Ahmed</span> from
+          <span class="blue">Karachi, Pakistan.</span>
           <br />
           I am currently employed as a Senior Application Engineer at Nextgeni.
           <br />
@@ -45,10 +45,6 @@ export default {
   background-color: #f8f9fa;
   border: none;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.purple {
-  color: #6c63ff;
 }
 
 .about-activity {
