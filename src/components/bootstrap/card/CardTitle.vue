@@ -1,5 +1,5 @@
 <template>
-  <div class="card-title" :class="titleClass" :style="titleStyle">
+  <div class="card-title" :class="titleClass">
     <slot />
   </div>
 </template>

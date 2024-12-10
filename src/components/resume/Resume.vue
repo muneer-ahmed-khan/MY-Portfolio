@@ -23,9 +23,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue'
-import { VuePdf, createLoadingTask } from 'vue3-pdfjs/esm'
-import { VuePdfPropsType } from 'vue3-pdfjs/components/vue-pdf/vue-pdf-props' // Prop type definitions can also be imported
-import { PDFDocumentProxy } from 'pdfjs-dist/types/src/display/api'
+import { VuePdf, createLoadingTask } from 'vue3-pdfjs'
 import Particle from '@/components/Particles.vue'
 import pdf from '@/assets/Muneer-Ahmed-Resume.pdf'
 import Container from '@/components/bootstrap/Container.vue'
@@ -47,12 +45,12 @@ export default defineComponent({
     VuePdf
   },
   setup() {
-    const pdfSrc = ref<VuePdfPropsType['src']>(pdf)
+    const pdfSrc = ref<any>(pdf)
     const numOfPages = ref(0)
 
     onMounted(() => {
       const loadingTask = createLoadingTask(pdfSrc.value)
-      loadingTask.promise.then((pdf: PDFDocumentProxy) => {
+      loadingTask.promise.then((pdf: any) => {
         numOfPages.value = pdf.numPages
       })
     })

@@ -1,5 +1,5 @@
 <template>
-  <p class="card-text" :class="textClass" :style="textStyle">
+  <p class="card-text" :class="textClass">
     <slot />
   </p>
 </template>
