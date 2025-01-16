@@ -9,7 +9,7 @@
         {{ description }}
       </CardText>
       <!-- GitHub or Blog Button -->
-      <TheButton variant="primary" :href="ghLink" target="_blank" class="me-2">
+      <TheButton variant="primary" :href="ghLink" target="_blank" classes="me-2">
         <font-awesome-icon :icon="['fab', 'github']" />&nbsp; {{ isBlog ? 'Blog' : 'GitHub' }}
       </TheButton>
       <!-- Demo Button (conditional rendering) -->
@@ -103,17 +103,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
-.project-card-view {
-  margin: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-}
-.project-card-view:hover {
-  transform: scale(1.05);
-}
-.text-justify {
-  text-align: justify;
-}
-</style>
+<style scoped></style>

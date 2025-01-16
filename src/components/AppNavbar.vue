@@ -48,7 +48,7 @@
       <div class="nav-item">
         <a
           class="nav-link"
-          href="https://soumyajitblogs.vercel.app/"
+          href="https://nest-of-blogs.vercel.app/"
           target="_blank"
           rel="noreferrer"
         >

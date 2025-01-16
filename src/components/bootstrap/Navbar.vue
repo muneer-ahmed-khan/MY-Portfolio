@@ -19,7 +19,7 @@
       <!-- Toggler -->
       <TheButton
         variant="link"
-        :class="['navbar-toggler', isCollapsed ? 'collapsed' : '']"
+        :classes="['navbar-toggler', isCollapsed ? 'collapsed' : '']"
         type="button"
         @click="toggleCollapse"
         aria-controls="responsive-navbar-nav"
